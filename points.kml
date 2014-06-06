@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+   <Style id="randomColorIcon">
+      <IconStyle>
+         <scale>5.0</scale>
+         <Icon>
+            <href>http://maplacejs.com/images/red-dot.png</href>
+         </Icon>
+      </IconStyle>
+   </Style>
+  <Placemark>
+      <name>United States Bullion Depository</name>
+      <styleUrl>#randomColorIcon</styleUrl>
+      <description>The legend states that there is a special room somewhere in the vault that does not house gold or artifacts such as cited above, but houses, instead, the Holy Grail, the Ark of the Covenant (complete with a &#8220;Do Not Touch&#8221; sign), satellite pictures proving that the Ararat Anomaly is Noah&#8217;s Ark, and the True Cross, complete with dried blood that has been analyzed as consisting of several strains of DNA, one of them encoded not on a double helix, but a triple helix.</description>
+      <Point>
+      <coordinates>-85.965282,37.883229,0</coordinates>
+    </Point>
+   </Placemark>
+   <Placemark>
+      <name>Santa Maria of Montserrat Abbey</name>
+      <styleUrl>#randomColorIcon</styleUrl>
+      <description>&#8220;Munsalvaesche&#8221; is German for the Latin phrase &#8220;mons salvationis,&#8221; &#8220;the mount of salvation.&#8221;  &#8220;Montserrat,&#8221; however, is Catalan for &#8220;jagged mountain.&#8221;  The monastery and abbey are nestled in the mountain, and the Grail is said to be hidden somewhere under the church grounds, or elsewhere on the mountain.  If so, it may well never be found, as the terrain is extraordinarily rugged and the mountain is gigantic.  The peak, at 4,055 feet, is called Saint Jerome who features prominently in several Grail legends</description>
+      <Point>
+         <coordinates>1.837676,41.593326,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>Valencia Cathedral</name>
+      <styleUrl>#randomColorIcon</styleUrl>
+      <description>Another contender is on display at the Cathedral of St. Mary in Valencia, and this is considered the most likely.  Skeptics claim that IF the Grail even exists, the Valencia Chalice is the best bet.  It was carbon dated in 1960 to a date of somewhere between the 300s BC and the 100s AD, manufactured in the Middle East, so it is possible.  Even if it isn&#8217;t the Grail, its age makes it extremely valuable.</description>
+      <Point>
+        <coordinates>-0.375212,39.475596,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>Perugia Cathedral</name>
+      <styleUrl>#randomColorIcon</styleUrl>
+      <description>The Grail may not be lost, but found, and on display to the public for free at the Cathedral of St. Lawrence, in Genoa.  This relic is a bowl made of green glass, which was thought to be emerald, until it was broken in the time of Napoleon.</description>
+      <Point>
+        <coordinates>12.389162,43.1125,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>Dome of the Rock</name>
+      <address>Jerusalem, Israel</address>
+      <styleUrl>#randomColorIcon</styleUrl>
+      <description>Legend states that since the Holy Grail was NOT the Holy Chalice, which is correct, it was buried with Jesus somewhere near his Crucifixion site. This site is believed by some to have been a fissure between two rocks, one of which has since eroded away, the other of which is still there to be visited, at the top of the hill on which the Dome of the Rock now sits.</description>
+      <Point>
+        <coordinates>35.235378,31.778021,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>Glastonbury Tor, Glastonbury, Somerset BA6, UK</name>
+      <description>Tor is Celtic for &#8220;conical hill,&#8221; and that is what Clastonbury Tor is.  It is said to be the legendary Avalon, King Arthur&#8217;s current resting place, while he heals from wounds suffered at the hands of his evil son, Mordred, whom he killed in a duel. The Arthurian and Templar legends are inseparable, and the legend goes that the Templars returned from the First Crusade with all the famous Biblical relics, and hid them throughout the British Isles.  The Grail was buried somewhere on Glastonbury Tor, perhaps between Arthur and Guinevere&#8217;s coffins, the most poetic place.</description>
+      <styleUrl>#randomColorIcon</styleUrl>
+      <Point>
+        <coordinates>-2.699167,51.143333,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>Rosslyn Chapel</name>
+      <styleUrl>#randomColorIcon</styleUrl>
+      <description>It was built starting in 1456 at the behest of its founder, William Sinclair, a nobleman and knight.  He is rumored to have been a descendant of Knights Templar.There are carvings of what appear to be Indian corn (maize) around the windows.  Maize was unheard of in Europe at the time of the chapel&#8217;s construction.</description>
+      <Point>
+        <coordinates>-3.160194,55.855378,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>Oak Island, Chester, NS, Canada</name>
+      <styleUrl>#randomColorIcon</styleUrl>
+      <description>&#8220;The Money Pit&#8221; was discovered by three teenage boys playing on the island, in 1795, or so the story goes, and over the centuries, 6 people have died attempting to excavated the mysterious treasure everyone is sure is down there.The longer it took to excavate, the wilder imaginations ran, until today, the Pit is no longer thought to hold merely chests of gold doubloons, but the Holy Grail itself, hidden there by the Knights Templar in the early to mid-1300s.</description>
+      <Point>
+        <coordinates>-64.294946,44.51228,0</coordinates>
+      </Point>
+   </Placemark>
+   <Placemark>
+      <name>Accokeek, MD, USA</name>
+      <description>The locals of the Accokeek area claim that a Jesuit priest stowed away on board Captain John Smith&#8217;s ship, as he sailed up the Potomac River sometime around 1606-07, and that this priest had ties all the way back to the Knights Templar.</description>
+      <styleUrl>#randomColorIcon</styleUrl>
+      <Point>
+        <coordinates>-77.02830899999999,38.667617,0</coordinates>
+      </Point>
+   </Placemark>
+</Document>
+</kml>

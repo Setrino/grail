@@ -1,0 +1,17 @@
+AddType application/x-httpd-php .html .htm
+AddHandler application/x-httpd-php .html .htm
+
+# Use Mod_deflate to compress static files
+<ifmodule mod_deflate.c>
+<filesmatch ".(js|css|ico|txt|htm|html|php)$">
+SetOutputFilter DEFLATE
+</filesmatch>
+</ifmodule>
+
+# Speed up caching
+FileETag MTime Size
+
+# Future Expires Headers
+<filesmatch ".(ico|pdf|flv|jpg|jpeg|png|gif|js|css|wav|mp4|ico|swf)$">
+Header set Expires "Sat, 27 Dec 2015 23:59:59 GMT"
+</filesmatch>

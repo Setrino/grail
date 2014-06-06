@@ -1,0 +1,164 @@
+html, *{
+    background-color: #00082b;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.wrapper{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.top_level{
+    width: 100%;
+}
+
+.top_level:after{
+    clear: both;
+}
+
+h1{
+    float: left;
+    width: 220px;
+    position: relative;
+    z-index: 5;
+}
+
+nav{
+    position: relative;
+    z-index: 5;
+    float: right;
+    top: 30px;
+    font-size: 18px;
+}
+
+nav li{
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav a{
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 1.5em 0 1.5em;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+#map3d{
+    margin: 0 auto;
+    position: relative;
+    top: 30px;
+}
+
+.active{
+    pointer-events: none;
+    cursor: default;
+    text-decoration: underline;
+}
+
+#amazingslider-1{
+    top: 140px;
+}
+
+#amazingslider-1 > div > div.amazingslider-slider-0 > div.amazingslider-text-wrapper-0 > div > div.amazingslider-title-0,
+#amazingslider-1 > div > div.amazingslider-slider-0 > div.amazingslider-text-wrapper-0 > div > div.amazingslider-description-0{
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    text-align: left;
+    font-size: 13px;
+}
+
+.jay, .parsi, .play, .sound, #playback, #playback1, #playback2, #playback3{
+    cursor: pointer;
+}
+
+.play, #volume{
+    display: inline-block;
+}
+
+.blanky{
+    position: relative;
+    z-index: 3;
+}
+
+.play{
+    position: relative;
+    right: 5px;
+    top: 5px;
+    z-index: 5;
+}
+
+.music{
+    position: relative;
+    top: 200px;
+    margin: 0 auto;
+    height: 55px;
+    width: 360px;
+    border: 3px solid #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.music img{
+    float: left;
+    position: relative;
+    border-right: 3px solid #ffffff;
+}
+
+img.str{
+    position: relative;
+    left: 10px;
+    top: 10px;
+    border: 0;
+}
+
+.music span{
+    position: relative;
+    top: 5px;
+    font-size: 9px;
+    text-transform: none;
+}
+
+#player {
+    height:100px;
+    width: 255px;
+    position: relative;
+    margin: 0 auto;
+    top: 170px;
+    left: 10px;
+}
+
+.sound{
+    position: relative;
+    bottom: 72px;
+}
+
+#playback, #playback1, #playback2, #playback3{
+    position: relative;
+    margin: 0 auto;
+    height:11px;
+    width: 226px;
+    top: 16px;
+    background: url('../images/playback.png') no-repeat center bottom;
+}
+
+#playback .ui-slider-range-min, #playback1 .ui-slider-range-min, #playback2 .ui-slider-range-min, #playback3 .ui-slider-range-min{
+    height:11px;
+    width: 226px;
+    background: url('../images/playback_full.png') no-repeat center bottom;
+}
+
+#volume {
+    position: relative;
+    z-index: 5;
+    margin: 0 auto;
+    height:72px;
+    width: 10px;
+    right: 22px;
+    background: url('../images/volume-full1.png') no-repeat center bottom;
+}
