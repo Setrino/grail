@@ -66,15 +66,43 @@ nav a:hover{
     top: 140px;
 }
 
-#amazingslider-1 > div > div.amazingslider-slider-0 > div.amazingslider-text-wrapper-0 > div > div.amazingslider-title-0,
-#amazingslider-1 > div > div.amazingslider-slider-0 > div.amazingslider-text-wrapper-0 > div > div.amazingslider-description-0{
+.top_text, .bottom_text{
     font-family: 'Montserrat', sans-serif;
+    text-transform: none;
     color: #FFFFFF;
     text-align: left;
     font-size: 13px;
 }
 
-.jay, .parsi, .play, .sound, #playback, #playback1, #playback2, #playback3{
+.control{
+    width: 100%;
+    position: relative;
+    top: 410px;
+    right: 90px;
+}
+
+.left_slider{
+    position: relative;
+    float: left;
+    right: 700px;
+}
+
+.right_slider{
+    position: relative;
+    float: right;
+}
+
+.slider_block{
+    position: relative;
+    top: 140px;
+}
+
+.slider{
+    float: left;
+    height: 550px;
+}
+
+.jay, .parsi, .play, .sound, #playback, #playback1, #playback2, #playback3, .left_slider, .right_slider{
     cursor: pointer;
 }
 
