@@ -1,5 +1,5 @@
 html, *{
-    background-color: #00082b;
+    background-color: #0f0fcc;
     text-transform: uppercase;
     color: #FFFFFF;
     font-family: 'Montserrat', sans-serif;
@@ -50,6 +50,10 @@ nav a:hover{
     text-decoration: underline;
 }
 
+nav a.active{
+    text-decoration: underline;
+}
+
 #map3d{
     margin: 0 auto;
     position: relative;
@@ -59,7 +63,6 @@ nav a:hover{
 .active{
     pointer-events: none;
     cursor: default;
-    text-decoration: underline;
 }
 
 #amazingslider-1{
@@ -69,6 +72,7 @@ nav a:hover{
 .top_text, .bottom_text{
     font-family: 'Montserrat', sans-serif;
     text-transform: none;
+    text-decoration:none;
     color: #FFFFFF;
     text-align: left;
     font-size: 13px;
@@ -94,7 +98,7 @@ nav a:hover{
 
 .slider_block{
     position: relative;
-    top: 140px;
+    top: 80px;
 }
 
 .slider{
@@ -102,7 +106,8 @@ nav a:hover{
     height: 550px;
 }
 
-.jay, .parsi, .play, .sound, #playback, #playback1, #playback2, #playback3, .left_slider, .right_slider{
+.jay, .parsi, .dylan, .pernille, .hunters, .monty, .pernille, .play, .sound,
+#playback0, #playback1, #playback2, #playback3, #playback4, #playback5, .left_slider, .right_slider, .logo{
     cursor: pointer;
 }
 
@@ -124,7 +129,7 @@ nav a:hover{
 
 .music{
     position: relative;
-    top: 200px;
+    top: 175px;
     margin: 0 auto;
     height: 55px;
     width: 360px;
@@ -157,7 +162,7 @@ img.str{
     width: 255px;
     position: relative;
     margin: 0 auto;
-    top: 170px;
+    top: 160px;
     left: 10px;
 }
 
@@ -166,7 +171,7 @@ img.str{
     bottom: 72px;
 }
 
-#playback, #playback1, #playback2, #playback3{
+#playback0, #playback1, #playback2, #playback3, #playback4, #playback5{
     position: relative;
     margin: 0 auto;
     height:11px;
@@ -175,7 +180,8 @@ img.str{
     background: url('../images/playback.png') no-repeat center bottom;
 }
 
-#playback .ui-slider-range-min, #playback1 .ui-slider-range-min, #playback2 .ui-slider-range-min, #playback3 .ui-slider-range-min{
+#playback0 .ui-slider-range-min, #playback1 .ui-slider-range-min, #playback2 .ui-slider-range-min,
+    #playback3 .ui-slider-range-min, #playback4 .ui-slider-range-min, #playback5 .ui-slider-range-min{
     height:11px;
     width: 226px;
     background: url('../images/playback_full.png') no-repeat center bottom;
@@ -190,3 +196,68 @@ img.str{
     right: 22px;
     background: url('../images/volume-full1.png') no-repeat center bottom;
 }
+
+.section{
+    text-align:center;
+}
+
+.intro p{
+    color: #fff;
+    position: relative;
+    top: 50px;
+}
+
+.header_fixed{
+    position:fixed;
+    display:block;
+    width: 1100px;
+    z-index:9;
+    padding: 8px 0 0 0;
+}
+
+.slide_text{
+    width: 750px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 20px;
+}
+
+/* Overlay copyright box */
+
+h2{
+    font-size: 28px;
+}
+
+.bgCover{
+    background-color: #000000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.overlayBox{
+    background: #0f0fcc;
+    color: #000;
+    font-family: Arial;
+    font-size: 15px;
+    position: absolute;
+    display: none;
+    width: 700px;
+    padding: 20px;
+    z-index: 101;
+    line-height:120%;
+}
+
+.closeOverlay{
+    position: relative;
+    width: 16px;
+    height: 16px;
+    left: 47%;
+    top: 5px;
+
+}
+
+/* END Overlay copyright box */

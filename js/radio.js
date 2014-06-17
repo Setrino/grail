@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+    var array = ['jay', 'parsi', 'dylan', 'hunters', 'monty', 'pernille'];
+
     $("#volume").slider({
         orientation: "vertical",
         min: 0,
@@ -12,7 +14,7 @@ $(document).ready(function() {
         }
     });
 
-    $("#playback").slider({
+    $("#playback0").slider({
         min: 0,
         max: 100,
         value: 0,
@@ -34,14 +36,75 @@ $(document).ready(function() {
         }
     });
 
+    $("#playback2").slider({
+        min: 0,
+        max: 100,
+        value: 0,
+        range: "min",
+        animate: true,
+        slide: function(event, ui) {
+            setTime((ui.value) / 100);
+        }
+    });
+
+    $("#playback3").slider({
+        min: 0,
+        max: 100,
+        value: 0,
+        range: "min",
+        animate: true,
+        slide: function(event, ui) {
+            setTime((ui.value) / 100);
+        }
+    });
+
+    $("#playback4").slider({
+        min: 0,
+        max: 100,
+        value: 0,
+        range: "min",
+        animate: true,
+        slide: function(event, ui) {
+            setTime((ui.value) / 100);
+        }
+    });
+
+    $("#playback5").slider({
+        min: 0,
+        max: 100,
+        value: 0,
+        range: "min",
+        animate: true,
+        slide: function(event, ui) {
+            setTime((ui.value) / 100);
+        }
+    });
+
     setInterval(function(){
         var value = Math.floor(myMedia.currentTime / myMedia.duration * 100);
         if(myMedia.src == 'http://localhost:8888/grail/audio/jay.mp3'){
-        $('#playback').slider('value', value);
-        $('#playback1').slider('value', 0);
-        }else{
-        $('#playback').slider('value', 0);
-        $('#playback1').slider('value', value);
+            zeroPlaybacks(0);
+            $('#playback0').slider('value', value);
+        }
+        else if(myMedia.src == 'http://localhost:8888/grail/audio/parsi.mp3'){
+            zeroPlaybacks(1);
+            $('#playback1').slider('value', value);
+        }
+        else if(myMedia.src == 'http://localhost:8888/grail/audio/dylan.mp3'){
+            zeroPlaybacks(2);
+            $('#playback2').slider('value', value);
+        }
+        else if(myMedia.src == 'http://localhost:8888/grail/audio/hunters.mp3'){
+            zeroPlaybacks(3);
+            $('#playback3').slider('value', value);
+        }
+        else if(myMedia.src == 'http://localhost:8888/grail/audio/monty.mp3'){
+            zeroPlaybacks(4);
+            $('#playback4').slider('value', value);
+        }
+        else if(myMedia.src == 'http://localhost:8888/grail/audio/pernille.mp3'){
+            zeroPlaybacks(5);
+            $('#playback5').slider('value', value);
         }
     }, 1000);
 
@@ -52,15 +115,27 @@ $(document).ready(function() {
 
     $(".jay").click(function(){
         playAudio('http://localhost:8888/grail/audio/jay', 50/100);
-        $(this).attr("src","images/pause.png");
-        $('.play').attr("src", "images/large_pause.png");
-        $(".parsi").attr("src","images/play.png");
+        flipPause(this);
     });
     $(".parsi").click(function(){
         playAudio('http://localhost:8888/grail/audio/wagner', 50/100);
-        $(this).attr("src","images/pause.png");
-        $('.play').attr("src", "images/large_pause.png");
-        $(".jay").attr("src","images/play.png");
+        flipPause(this);
+    });
+    $(".dylan").click(function(){
+        playAudio('http://localhost:8888/grail/audio/dylan', 50/100);
+        flipPause(this);
+    });
+    $(".hunters").click(function(){
+        playAudio('http://localhost:8888/grail/audio/hunters', 50/100);
+        flipPause(this);
+    });
+    $(".monty").click(function(){
+        playAudio('http://localhost:8888/grail/audio/monty', 50/100);
+        flipPause(this);
+    });
+    $(".pernille").click(function(){
+        playAudio('http://localhost:8888/grail/audio/pernille', 50/100);
+        flipPause(this);
     });
 
     $(".sound").click(function(){
@@ -82,6 +157,23 @@ $(document).ready(function() {
             $(this).attr("src", "images/large_pause.png");
         }
     });
+
+    function flipPause(that){
+        $.each(array, function(i, v){
+            console.log($("." + v));
+            $("." + v).attr("src","images/play.png");
+        });
+        $(that).attr("src","images/pause.png");
+        $('.play').attr("src", "images/large_pause.png");
+    }
+
+    function zeroPlaybacks(value){
+        for(var i = 0; i < array.length; i++){
+            if(i != value){
+                $('#playback' + i).slider('value', 0);
+            }
+        }
+    }
 });
 
 var previous = 0;

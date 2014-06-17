@@ -1,42 +1,129 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Holy Grail</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
     <link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
     <script src="js/jquery-1.10.2.min.js"></script>
-    <script src="js/jquery.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script src="js/vendors/jquery.slimscroll.min.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
     <script src="js/place.js"></script>
+    <script src="js/about.js"></script>
 </head>
 <body>
-<div class="wrapper">
-    <div class="top_level">
-        <a href="index.html"><h1>Quête du Graal 2014</h1></a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Quête</a></li>
-                <li><a href="" class="active">Lieu</a></li>
-                <li><a href="radio.html">Radio</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="slider_block">
-        <div class="slide_text">
-            <div class="top_text">26.983731° 4.637498°</div>
-            <div class="bottom_text">Holy Grail Pharmacy, Santo Nino, Phillippines</div>
+    <div class="wrapper">
+        <div class="top_level header_fixed">
+            <h1 class="logo">Quête du Graal 2014</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Quête</a></li>
+                    <li><a href="" class="active">Lieu</a></li>
+                    <li><a href="radio.html">Radio</a></li>
+                </ul>
+            </nav>
         </div>
-        <img class="slider" src="images/Screen%20Shot%202014-04-15%20at%2023.06.27.png" />
     </div>
-    <div class="control">
-        <img class="left_slider" src="images/left_slider.png" />
-        <img class="right_slider" src="images/right_slider.png" />
+    <div id="fullpage">
+        <div class="section" id="section0">
+            <div class="intro">
+                <div class="slider_block">
+                    <div class="slide_text">
+                        <div class="top_text">42.7320015° 75.624748°</div>
+                        <div class="bottom_text">2413 Klein Rd, Morning View, KY, USA</div>
+                    </div>
+                    <img src="images/slides/1.png" id="first" />
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section1">
+            <div class="intro">
+                <div class="slider_block">
+                    <div class="slide_text">
+                        <div class="top_text">43.05119° 71.0808615°</div>
+                        <div class="bottom_text">64 Main St, Epping, NH 03042, USA</div>
+                    </div>
+                    <img src="images/slides/2.png" id="second" />
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section2">
+            <div class="intro">
+                <div class="slider_block">
+                    <div class="slide_text">
+                        <div class="top_text">41.4400775° 74.0196043°</div>
+                        <div class="bottom_text">93 Duncan Lane, Cornwall-on-Hudson, NY, USA</div>
+                    </div>
+                    <img src="images/slides/3.png" id="third" />
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section3">
+            <div class="intro">
+                <div class="slider_block">
+                    <div class="slide_text">
+                        <div class="top_text">34.333041° 19.030396°</div>
+                        <div class="bottom_text">39, 15th Ave Kleinmond, 7195, South Africa</div>
+                    </div>
+                    <img src="images/slides/4.png" id="fourth" />
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section4">
+            <div class="intro">
+                <div class="slider_block">
+                    <div class="slide_text">
+                        <div class="top_text">39.0981279° 84.5088835°</div>
+                        <div class="bottom_text">169 Joe Nuxhall Way, Cincinnati, OH, USA</div>
+                    </div>
+                    <img src="images/slides/5.png" id="fifth" />
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section5">
+            <div class="intro">
+                <div class="slider_block">
+                    <div class="slide_text">
+                        <div class="top_text">29.6706309° 95.2387705°</div>
+                        <div class="bottom_text">3448 S Richey St, Houston, TX, USA</div>
+                    </div>
+                    <img src="images/slides/6.png" id="sixth" />
+                </div>
+            </div>
+        </div>
     </div>
-    <!--<div id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
-        <ul class="amazingslider-slides" style="display:none;">
-            <li><img src="images/Screen Shot 2014-04-15 at 23.06.27.png" alt="26.983731° 4.637498°" data-description="Holy Grail Pharmacy, Santo Nino, Phillippines" /></li>
-            <li><img src="images/Screen Shot 2014-04-15 at 23.23.05.png" alt="6.461231° 124.670698°" data-description="La Grail Srl, Via Gradisca, 66/1, Pasiano Pordenone" /></li>
-        </ul>
-    </div>-->
-</div>
+    <!-- The dark background -->
+    <div class="bgCover">&nbsp;</div>
+    <!-- overlay box -->
+    <div class="overlayBox">
+        <div class="overlayContent">
+            <!--the close button-->
+            <a href="#" class="closeOverlay"><img src="images/close.png"></a>
+            <!--normal content-->
+            <p class="info">
+            <h2>Quête du Graal 2014</h2><br>
+            La Quête du Graal représente un voyage intérieur,
+            un voyage en soi pour tout chercheur parvenu
+            à une certaine étape dans son cheminement intérieur
+            à la découverte de lui-même. Celui ou celle qui entreprend
+            ce voyage en soi rencontre des aventures extraordinaires,
+            à la fois fantastiques et belles, mais aussi effrayantes.
+            Le but en est de découvrir le Graal et d'être enveloppé
+            de sa lumière et de sa beauté, tout autant que d'en saisir
+            certains mystères. Le monde se situe en dehors de notre espace-temps
+            conventionnel. Les chevaliers de la Table Ronde, autant de symboles
+            qui préfigurent la Quête de l'homme dans son monde intérieur, mais aussi
+            la recherche de l'univers des dieux dans lequel l'humain qui a retrouvé
+            sa véritable nature a le pouvoir de se hisser. Vous l'avez compris, la
+            Tradition nous offre, sous une forme allégorique, des récits légendaires
+            qui cachent toute la beauté du savoir humain. Seules les clés que nous donne
+            la Connaissance nous permettent de saisir, sous une forme claire et limpide,
+            l'extraordinaire vérité qui se cache toujours sous le mythe qui fait partie de
+            la formidable mémoire humaine.
+            </p>
+        </div>
+    </div>
 </body>
 </html>
