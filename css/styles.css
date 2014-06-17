@@ -1,8 +1,7 @@
 html, *{
     background-color: #0f0fcc;
-    text-transform: uppercase;
     color: #FFFFFF;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'PT Serif', serif;
     text-align: center;
     letter-spacing: 2px;
 }
@@ -57,7 +56,6 @@ nav a.active{
 #map3d{
     margin: 0 auto;
     position: relative;
-    top: 30px;
 }
 
 .active{
@@ -70,8 +68,7 @@ nav a.active{
 }
 
 .top_text, .bottom_text{
-    font-family: 'Montserrat', sans-serif;
-    text-transform: none;
+    font-family: 'PT Serif', serif;
     text-decoration:none;
     color: #FFFFFF;
     text-align: left;
@@ -154,7 +151,6 @@ img.str{
     position: relative;
     top: 5px;
     font-size: 9px;
-    text-transform: none;
 }
 
 #player {
@@ -177,6 +173,7 @@ img.str{
     height:11px;
     width: 226px;
     top: 16px;
+    left: 28px;
     background: url('../images/playback.png') no-repeat center bottom;
 }
 
@@ -241,7 +238,7 @@ h2{
 .overlayBox{
     background: #0f0fcc;
     color: #000;
-    font-family: Arial;
+    font-family: Montserrat, serif;
     font-size: 15px;
     position: absolute;
     display: none;

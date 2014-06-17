@@ -24,7 +24,7 @@ function showOverlayBox() {
     $('.overlayBox').css({
         display:'block',
         left:( $(window).width() - $('.overlayBox').width() ) / 2,
-        top:( screen.availHeight - $('.overlayBox').height() ) / 2 - 20,
+        top:( screen.availHeight - $('.overlayBox').height() ) / 2 - 40,
         position: 'absolute'
     });
 
